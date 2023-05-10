@@ -7,13 +7,18 @@
   <meta charset="UTF-8">
   <!--Responsividade. O tamanho do conteúdo será = ao da tela-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <!--Título da Pag que aparece na guia-->
   <title>Pandas</title>
+  <!--Link para o documento de estilo CSS-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <!--Começo do conteúdo-->
 <body>
+  
   <!--Lista não ordenada para fazer o menu-->
-  <ul>
+  <ul id="menu">
     <!--Elemento da lista-->
     <li>
       <!--Link para outra página-->
@@ -23,25 +28,74 @@
       <a href="contato.html">Contato</a>
     </li>
   </ul>
+
   <!--Título da página-->
-    <h1>Pandas</h1>
+    <h1 class="center">Pandas</h1>
   
-    <!--Parágrafo-->
-    <p>
-      Gosto de pandas porque eles são irritantemente insistentes e ao mesmo tempo extremamente fofinhosLorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio deleniti similique pariatur, et aut voluptatibus, dolores omnis libero excepturi expedita dignissimos provident cumque laudantium blanditiis culpa minima. Ipsum, dicta.
-    </p>
-    <!--Imagem com descrição pelo alt, o que ajuda na acessibilidade-->
-    <img src="img/foto.jpg" alt="Foto da criadora do conteúdo. Foto de Pandas bebês"  width="560" height="315" />
-    <!--Quadro para incluir o vídeo do Youtube com tamanho, url, borda e funcionalidades-->
-    <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/l73rmrLTHQc" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen
-    ></iframe>
+    <!--Divisão para organização-->
+    <div class="container"> 
+      
+      <!-- Divisão para os textos-->  
+      <div class="pdg30"> 
+      <!--Parágrafo-->
+        <p class="justify"> 
+          Gosto de pandas porque eles são irritantemente insistentes e ao mesmo tempo extremamente fofinhosLorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio deleniti similique pariatur, et aut voluptatibus, dolores omnis libero excepturi expedita dignissimos provident cumque laudantium blanditiis culpa minima. Ipsum, dicta.
+        </p>
+        <p class="justify"> 
+          Gosto de pandas porque eles são irritantemente insistentes e ao mesmo tempo extremamente fofinhosLorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio deleniti similique pariatur, et aut voluptatibus, dolores omnis libero excepturi expedita dignissimos provident cumque laudantium blanditiis culpa minima. Ipsum, dicta.
+        </p>
+
+      </div>  
+      
+      <!-- Divisão para imagem--> 
+      <div>
+        <!--Imagem com descrição pelo alt, o que ajuda na acessibilidade-->
+        <img class="br-50 wh-400 pdg30" src="img/foto.jpg" alt="Foto da criadora do conteúdo. Foto de Pandas bebês"  width="560" height="315" />
+      </div>  
+    
+    </div>
+    
+    <h2 class="center">Para melhorar o seu dia</h2>
+    
+    <!--Divisão para o vídeo-->
+    <div class="container mb-50">
+      <!--Quadro para incluir o vídeo do Youtube com tamanho, url, borda e funcionalidades-->
+      <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/l73rmrLTHQc" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen
+      ></iframe>
+
+
+    <!--Uma divisão para o footer-->
+    </div>
+
+      <!--Criando um footer-->
+     <footer>
+      <div class="container">
+       
+        <!--Imagens para contato e links-->
+        <a href="https://github.com/Yasmin-CCS" target="_blank">
+          <img class="tm-social pdg30" src="img/github.png"></a>
+
+          <a href="https://www.linkedin.com/in/yasmin-saparolli/" target="_blank">
+          <img class="tm-social pdg30"src="img/linkedin.png"></a>
+
+          <a href="https://youtu.be/ElKQNN7T9iE" target="_blank">
+          <img class="tm-social pdg30"src="img/user.png"></a>
+      </div>
+
+        <!-- Usar &copy para conseguir o C comercial-->
+        <p class="center">
+         Todos os direitos reservados para Yasmin &copy
+        </p>
+     </footer>
+    </div>
+
 
 
 
