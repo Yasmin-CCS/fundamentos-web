@@ -3,31 +3,39 @@
 <!--Início do doc. HTML e Idioma Padrão-->
 <html lang="pt-br">
 <head>
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!--Padrão do Teclado-->
   <meta charset="UTF-8">
   <!--Responsividade. O tamanho do conteúdo será = ao da tela-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+  <!--Link das fontes-->
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Ysabeau:wght@400;700&display=swap" rel="stylesheet">
   <!--Título da Pag que aparece na guia-->
   <title>Contato</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  
 </head>
 
 <!--Começo do conteúdo-->
 <body>
  
-  <!--Lista não ordenada para fazer o menu-->
-  <ul id="menu">
-    <!--Elemento da lista-->
-    <li>
-      <!--Link para outra página-->
-      <a href="index.html">Home </a>
-    </li>
-    <li>
-      <a href="contato.html">Contato</a>
-    </li>
-  </ul>
-  
+  <nav>
+    <!--Lista não ordenada para fazer o menu-->
+    <ul id="menu">
+      <!--Elemento da lista-->
+      <li>
+        <!--Link para outra página-->
+        <a href="index.html">Home </a>
+      </li>
+      <li>
+        <a href="contato.html">Contato</a>
+      </li>
+    </ul>
+    <img id="pandamaluco" src="./assets/img/pandamaluco.png">
+  </nav>
+  <main>
   <!--Título da página-->
   <h1 class="center">Hey! Estamos aqui</h1>  
 
@@ -37,29 +45,35 @@
       <h2>Fale com a gente!</h2>
       <!--Formulário-->
       <form>
+
         
         <!--Nome do campo-->
         <label for="nome">nome</label>
-      
+        
         <!--Campo para inserção-->
+        <input onkeyup="validaNome()" type="text" id="nome" placeholder="Insira seu nome">
+        <!--Div para possíveis mensagens de erro-->
+        <div id="alertNome"></div>
       
-        <input type="text" id="nome">
         <!--Pular linha (Não usar pois isso pode ser feito pelo CSS depois)-->
         <br>
         <br>
-        <label for="nome">E-mail</label>
-        <input type="email" id="email">
+       
+        <label for="email">E-mail</label>
+        <input onkeyup="validaEmail()" type="email" id="email" placeholder="Insira seu email">
+        <div id="alertEmail"></div>
         <br>
         <br>
         <label for="assunto">Assunto</label>
         
         <!--Campo de texto mais aproprado que o input-->
-        <textarea type="text" id="assunto" cols="30" aria-rowspan="5"></textarea>
+        <textarea onkeyup="validaAssunto()" type="text" id="assunto" cols="30" aria-rowspan="5" placeholder="Conte para a gente!"></textarea>
+        <div id="alertAssunto"></div>
         <br>
         <br>
       
         <!--Botão para enviar-->
-        <button>Enviar</button>
+        <button onclick="enviar()">Enviar</button>
       </form>
     </div>
 
@@ -70,6 +84,9 @@
     
       <!--Quadro para incorporação de mapa so google maps-->
       <iframe 
+      onmousemove="mapzoom()"
+      onmouseout="mapnormal()"
+      id = "mapa"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.831282533265!2d103.18087731513867!3d31.03094998153417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x36fab5fb021eba3f%3A0x3095a5fbd5c2f3ad!2sReserva%20Natural%20Nacional%20de%20Wolong!5e0!3m2!1spt-BR!2sbr!4v1683585117431!5m2!1spt-BR!2sbr" 
       width="300" 
       height="225" 
@@ -89,23 +106,23 @@
      
       <!--Imagens para contato e links-->
       <a href="https://github.com/Yasmin-CCS" target="_blank">
-        <img class="tm-social pdg30" src="img/github.png"></a>
+        <img class="tm-social pdg30" src="./assets/img/github.png"></a>
 
         <a href="https://www.linkedin.com/in/yasmin-saparolli/" target="_blank">
-        <img class="tm-social pdg30"src="img/linkedin.png"></a>
+        <img class="tm-social pdg30" src="./assets/img/linkedin.png"></a>
 
         <a href="https://youtu.be/ElKQNN7T9iE" target="_blank">
-        <img class="tm-social pdg30"src="img/user.png"></a>
+        <img class="tm-social pdg30"src="./assets/img/user.png"></a>
     
       </div>
 
       <!-- Usar &copy para conseguir o C comercial-->
       <p class="center">
-       Todos os direitos reservados para Yasmin &copy
+       Feito com curiosidade por Yasmin - 2023 &copy
       </p>
    </footer>
   </div>
-
-
+</main>
+  <script src="./assets/script/script.js"></script>
 </body>
 </html>

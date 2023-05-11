@@ -1,0 +1,138 @@
+/*Estilos de Index.html*/
+* {margin:0; padding:0; list-style:none; vertical-align:baseline;}
+
+body {
+  /*background-color:#8d9e3e;*/
+  background-image: linear-gradient(45deg, #9e803e, #95aa38);
+  color: antiquewhite;
+  font-family: 'Ysabeau', sans-serif;
+  margin: 0px;
+}
+
+h1 {
+  
+  font-size: 81px;
+}
+
+h1{
+  letter-spacing: 4px;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  text-shadow: 4px 4px 5px #588017
+}
+
+#panda{
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: shine;
+  animation-direction: alternate-reverse;
+  animation-duration: 2s;
+}
+
+@keyframes shine {
+  0%   {box-shadow: 0px 0px 0px #588017}
+  25%  {box-shadow: 0px 0px 2px #a8b81d}
+  50%  {box-shadow: 0px 0px 4px #fdff6b}
+  75%  {box-shadow: 0px 0px 5px #fafca0}
+  100% {box-shadow: 0px 0px 60px #ffffff}
+}
+
+#pandamaluco {
+  width: 55px;
+  
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: pandamaluco;
+  animation-duration: 2s;
+}
+
+@keyframes pandamaluco {
+  0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(90deg);}
+  50%  {transform: rotate(180deg);}
+  75%  {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+h2{
+  font-size: 30px;
+  font: weight 700;;
+}
+
+nav {
+  display: flex;
+  gap: 900px;
+  width: 100%;
+  background-color: #95aa38;
+  margin: 0px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+main {
+  padding: 30px 30px 30px 30px;
+  
+}
+
+.text{
+  font-size: 20px;
+  
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+.center{
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#menu li{
+  display: inline;
+  font-size: 25px;
+  padding-right:30px  
+}
+
+#menu li a  {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+#menu li a:hover {
+  color: rgb(199, 188, 153);
+}
+
+.pdg30 {
+  padding: 30px;
+}
+
+.wh-400{
+  width: 400px;
+}
+
+.tm-social{
+  width: 50px;
+  height: 50px;
+}
+
+mb-50 {
+  margin-bottom: 50px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
